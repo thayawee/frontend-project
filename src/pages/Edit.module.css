@@ -1,0 +1,148 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px;
+}
+
+.title h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--text-color1);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 40px 0;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 600px;
+}
+
+.formGroup label {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--text-color3);
+}
+
+.formGroup input {
+  padding: 10px 16px;
+  color: var(--text-color3);
+  border: 1px solid var(--text-color3);
+  border-radius: 8px;
+  outline: none;
+  font-size: 18px;
+}
+
+.formGroup button {
+  padding: 20px 30px;
+  border: none;
+  border-radius: 15px;
+  background-color: var(--btn1);
+  color: var(--text-color1);
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.formGroup button:hover {
+  background-color: var(--btn2);
+  color: var(--btn1);
+}
+
+.ratingContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ratingContainer > label {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--text-color3);
+  padding-top: 6px;
+}
+
+.rating {
+  display: flex;
+  align-items: end;
+}
+
+@media (max-width: 1024px) {
+  .title h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title h1 {
+    font-size: 24px;
+  }
+  .formGroup label {
+    font-size: 16px;
+    width: 90%;
+    margin: 0px auto;
+  }
+  .formGroup input {
+    font-size: 16px;
+    width: 90%;
+    margin: 0px auto;
+  }
+  .formGroup button {
+    font-size: 16px;
+    width: 90%;
+    margin: 0px auto;
+  }
+  .ratingContainer {
+    width: 90%;
+    margin: 0px auto;
+  }
+  .ratingContainer label {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 670px) {
+  .formGroup label {
+    width: 60%;
+  }
+  .formGroup input {
+    width: 60%;
+  }
+  .formGroup button {
+    width: 60%;
+  }
+  .ratingContainer {
+    width: 60%;
+  }
+}
+
+@media (max-width: 480px) {
+  .title h1 {
+    font-size: 20px;
+  }
+  .formGroup label {
+    font-size: 14px;
+    width: 50%;
+  }
+  .formGroup input {
+    font-size: 14px;
+    width: 50%;
+  }
+  .formGroup button {
+    font-size: 14px;
+    width: 50%;
+  }
+  .ratingContainer {
+    width: 50%;
+  }
+  .ratingContainer label {
+    font-size: 14px;
+  }
+}

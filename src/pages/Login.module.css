@@ -1,0 +1,174 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px;
+}
+
+.title h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--text-color1);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 40px 0;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 600px;
+}
+
+.formGroup label {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--text-color3);
+}
+
+.formGroup input {
+  padding: 10px 16px;
+  color: var(--text-color3);
+  outline: none;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.formGroup button {
+  padding: 20px 30px;
+  border: none;
+  border-radius: 15px;
+  background-color: var(--btn1);
+  color: var(--text-color1);
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.formGroup button:hover {
+  background-color: var(--btn2);
+  color: var(--btn1);
+}
+
+.subtitle h2,
+a {
+  font-size: 18px;
+  font-weight: normal;
+  color: var(--text-color3);
+  text-decoration: none;
+  margin: 14px 0;
+}
+
+.subtitle h2 a {
+  font-style: italic;
+  padding-left: 6px;
+}
+
+.subtitle h2 a:hover {
+  color: var(--text-color1);
+}
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 24px;
+  }
+
+  .formGroup label {
+    font-size: 16px;
+    width: 90%;
+    margin: 0px auto;
+  }
+
+  .formGroup input {
+    font-size: 16px;
+    width: 90%;
+    margin: 0px auto;
+  }
+
+  .formGroup button {
+    font-size: 16px;
+    width: 90%;
+    margin: 0px auto;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .title h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title h1 {
+    font-size: 24px;
+  }
+  .formGroup label {
+    font-size: 16px;
+    width: 90%;
+    margin: 0px auto;
+  }
+  .formGroup input {
+    font-size: 16px;
+    width: 90%;
+    margin: 0px auto;
+  }
+  .formGroup button {
+    font-size: 16px;
+    width: 90%;
+    margin: 0px auto;
+  }
+  .subtitle h2,
+  a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 670px) {
+  .formGroup label {
+    width: 60%;
+  }
+  .formGroup input {
+    width: 60%;
+  }
+  .formGroup button {
+    width: 60%;
+  }
+}
+
+@media (max-width: 480px) {
+  .title h1 {
+    font-size: 20px;
+  }
+  .formGroup label {
+    font-size: 14px;
+    width: 50%;
+  }
+  .formGroup input {
+    font-size: 14px;
+    width: 50%;
+  }
+  .formGroup button {
+    font-size: 14px;
+    width: 50%;
+  }
+  .subtitle h2,
+  a {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,78 @@
+.containerButton {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin: 60px 80px 0px 80px;
+}
+
+.button {
+  padding: 20px 30px;
+  margin: 0;
+  border: none;
+  border-radius: 15px;
+  background-color: var(--btn1);
+  color: var(--text-color1);
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--btn2);
+  color: var(--btn1);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 20px;
+  row-gap: 40px;
+  padding: 60px 80px;
+}
+
+@media (max-width: 1440px) {
+  .content {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .containerButton {
+    margin: 60px 60px 0px 60px;
+  }
+  .content {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 60px 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .containerButton {
+    margin: 40px 60px 0px 60px;
+  }
+  .content {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    padding: 40px 60px;
+  }
+  .button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+    padding: 40px 60px;
+  }
+}
+
+@media (max-width: 320px) {
+  .content {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 20px;
+    padding: 40px 60px;
+  }
+}

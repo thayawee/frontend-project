@@ -1,0 +1,121 @@
+.container {
+  width: 60%;
+  padding: 60px;
+  margin: auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  gap: 20px;
+  background-color: var(--green);
+  border-radius: 20px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--text-color1);
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 22px;
+  text-align: center;
+  color: var(--text-color2);
+}
+
+.videourl {
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  overflow: hidden;
+  width: fit-content;
+}
+
+.commentAll {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: var(--black);
+  color: var(--text-color1);
+  width: 100%;
+}
+
+.commentAll p {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.commentDetail {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: right;
+}
+
+.edit {
+  display: flex;
+  align-items: end;
+  justify-content: right;
+  gap: 5px;
+  margin-top: 5px;
+  color: var(--text-color2);
+}
+
+.edit:hover {
+  color: var(--text-color1);
+}
+
+.edit p {
+  font-weight: bold;
+  font-style: normal;
+  font-size: 16px;
+}
+
+@media (max-width: 1355px) {
+  .videourl {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 28px;
+  }
+  .subtitle {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 24px;
+  }
+  .subtitle {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    gap: 10px;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .subtitle {
+    font-size: 14px;
+  }
+  .commentDetail {
+    font-size: 14px;
+  }
+}
